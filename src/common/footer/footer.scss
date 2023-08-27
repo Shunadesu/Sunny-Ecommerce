@@ -1,0 +1,126 @@
+:root{
+    --PrimaryColor: #53A6D8;
+    --SecondaryColor: #88CDF6;
+    --WhiteColor: #ffffff;
+    --lineargradient: linear-gradient(to right, #53A6D8, #88CDF6 );
+    --backgroundColor: #e94560;
+  }
+
+footer{
+    .container{
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        background: var(--lineargradient);
+        align-items: flex-start;
+        justify-content: center;
+        padding: 1rem;
+        gap: 2rem;
+        color: var(--WhiteColor);
+        .leftContent{
+            flex: 1;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            flex-direction: column;
+            gap: 0.5rem;
+            .divContent{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                align-items: flex-start;
+                justify-content: center;
+                .aContent{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 1rem;
+                    align-items: center;
+                    .socialsMedia{
+                        
+                        padding: 0.5rem 1rem;
+                        display: flex;
+                        gap: 1rem;
+                        justify-content: space-around;
+                        align-items: center;
+                        // background-color: var(--PrimaryColor);
+                        border-radius: 50px;
+                        transition: all 0.5s ease;
+                        .icon{
+                            color: var(--WhiteColor);
+                        }
+                        &:hover{
+                            background-color: var(--SecondaryColor);
+                            transform: scale(1.07, 1.07);
+                        }
+                    }
+                }
+            }
+        }
+        .rightContent{
+            display: flex;
+            flex: 3;
+            justify-content: center;
+            align-items: flex-start;
+            .divContent{
+                flex: 1;
+                .headingContent{
+                    transition: all 0.5s ease;
+                    margin-bottom: 3px;
+                    &:hover{
+                        transform: scale(1.02, 1.02);
+                        color: var(--SecondaryColor);
+                    }
+                }
+            }
+            .liContent{
+                li{
+                    transition: all 0.5s ease-in-out;
+                    cursor: pointer;
+                    &:hover{
+                        transform: translateX(5px);
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 1200px){
+            .rightContent{
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                gap: 2rem;
+            }
+        }
+    }
+    @media screen and (max-width: 900px){
+        .container{
+            flex-direction: column;
+            .rightContent{
+                flex-direction: row;
+            }
+        }
+    }
+    @media screen and (max-width: 600px){
+        .container{
+            flex-direction: column;
+            .rightContent{
+                flex-direction: column;
+            }
+        }
+    }
+    .pagePadding{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    @media screen and (max-width: 768px){
+        .pagePadding{
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+    @media screen and (max-width: 400px){
+        .pagePadding{
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+}

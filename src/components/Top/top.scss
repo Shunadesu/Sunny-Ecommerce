@@ -1,0 +1,65 @@
+:root{
+    --PrimaryColor: #53A6D8;
+    --SecondaryColor: #88CDF6;
+    --WhiteColor: #ffffff;
+    --lineargradient: linear-gradient(to right, #53A6D8, #88CDF6 );
+    --backgroundColor: #e94560;
+  }
+
+.topCate{
+    position: relative;
+    .container{
+        width: 100%;
+        .heading{
+            align-items: center;
+            justify-content: space-between;
+            .rightContent{
+                span{
+                    opacity: 0.5;
+                    &:hover{
+                        color: var(--backgroundColor);
+                        opacity: 1;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .box{          
+            .nameTop{
+                position: relative;
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                span{
+                    background-color: var(--PrimaryColor);
+                    color: var(--WhiteColor);
+                    font-size: 12px;
+                    padding: 5px 10px ;
+                    border-radius: 50px;
+                    margin: 5px;
+                    position: absolute;
+                    top: 5px;
+                }
+                .topLeft{
+                    position: absolute;
+                    left: 10px;
+                }
+                .topRight{
+                    right: 5px;
+                    background-color: var(--SecondaryColor);
+                    color: var(--WhiteColor);
+                    position: absolute;
+                }
+            }
+            .imgDiv{
+                width: 100%;
+                height: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

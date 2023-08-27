@@ -1,0 +1,120 @@
+:root {
+  --PrimaryColor: #53A6D8;
+  --SecondaryColor: #88CDF6;
+  --WhiteColor: #ffffff;
+  --lineargradient: linear-gradient(to right, #53A6D8, #88CDF6 );
+  --backgroundColor: #e94560;
+}
+
+footer .container {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  background: var(--lineargradient);
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1rem;
+  gap: 2rem;
+  color: var(--WhiteColor);
+}
+footer .container .leftContent {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+footer .container .leftContent .divContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+footer .container .leftContent .divContent .aContent {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+footer .container .leftContent .divContent .aContent .socialsMedia {
+  padding: 0.5rem 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.5s ease;
+}
+footer .container .leftContent .divContent .aContent .socialsMedia .icon {
+  color: var(--WhiteColor);
+}
+footer .container .leftContent .divContent .aContent .socialsMedia:hover {
+  background-color: var(--SecondaryColor);
+  transform: scale(1.07, 1.07);
+}
+footer .container .rightContent {
+  display: flex;
+  flex: 3;
+  justify-content: center;
+  align-items: flex-start;
+}
+footer .container .rightContent .divContent {
+  flex: 1;
+}
+footer .container .rightContent .divContent .headingContent {
+  transition: all 0.5s ease;
+  margin-bottom: 3px;
+}
+footer .container .rightContent .divContent .headingContent:hover {
+  transform: scale(1.02, 1.02);
+  color: var(--SecondaryColor);
+}
+footer .container .rightContent .liContent li {
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+footer .container .rightContent .liContent li:hover {
+  transform: translateX(5px);
+}
+@media screen and (max-width: 1200px) {
+  footer .container .rightContent {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  footer .container {
+    flex-direction: column;
+  }
+  footer .container .rightContent {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer .container {
+    flex-direction: column;
+  }
+  footer .container .rightContent {
+    flex-direction: column;
+  }
+}
+footer .pagePadding {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+@media screen and (max-width: 768px) {
+  footer .pagePadding {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  footer .pagePadding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}/*# sourceMappingURL=footer.css.map */

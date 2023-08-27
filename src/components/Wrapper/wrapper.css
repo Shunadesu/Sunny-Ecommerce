@@ -1,0 +1,46 @@
+:root {
+  --PrimaryColor: #53A6D8;
+  --SecondaryColor: #88CDF6;
+  --WhiteColor: #ffffff;
+  --lineargradient: linear-gradient(to right, #53A6D8, #88CDF6 );
+  --backgroundColor: #e94560;
+}
+
+.wrapper .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.wrapper .container .products {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .container .products .icon-circle {
+  margin-left: 0;
+  color: #000 !important;
+}
+.wrapper .container .products p {
+  text-align: center;
+  opacity: 0.6;
+}
+.wrapper .container .products p:hover {
+  opacity: 1;
+}
+.wrapper .container .products:hover {
+  background: linear-gradient(to right, #53A6D8, #88CDF6);
+  color: var(--WhiteColor);
+}
+@media screen and (max-width: 1000px) {
+  .wrapper .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 450px) {
+  .wrapper .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}/*# sourceMappingURL=wrapper.css.map */

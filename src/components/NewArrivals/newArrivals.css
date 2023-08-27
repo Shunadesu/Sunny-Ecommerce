@@ -1,0 +1,90 @@
+:root {
+  --PrimaryColor: #53A6D8;
+  --SecondaryColor: #88CDF6;
+  --WhiteColor: #ffffff;
+  --lineargradient: linear-gradient(to right, #53A6D8, #88CDF6 );
+  --backgroundColor: #e94560;
+}
+
+.newArrivals {
+  position: relative;
+}
+.newArrivals .container {
+  width: 100%;
+}
+.newArrivals .container .heading {
+  align-items: center;
+  justify-content: space-between;
+}
+.newArrivals .container .heading .leftContent {
+  gap: 0.5rem;
+}
+.newArrivals .container .heading .leftContent .icon {
+  font-size: 18px;
+}
+.newArrivals .container .heading .rightContent span {
+  opacity: 0.5;
+}
+.newArrivals .container .heading .rightContent span:hover {
+  color: var(--backgroundColor);
+  opacity: 1;
+  cursor: pointer;
+}
+.newArrivals .container .content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.newArrivals .container .content .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.newArrivals .container .content .box .imgDiv {
+  width: 120px;
+  height: 120px;
+}
+.newArrivals .container .content .box .imgDiv img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: all 0.5s ease;
+}
+.newArrivals .container .content .box .imgDiv img:hover {
+  transform: scale(1.07, 1.07);
+}
+.newArrivals .container .content .box .contentDiv {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 1000px) {
+  .newArrivals .container .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .newArrivals .container .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .newArrivals .container .content .box .imgDiv {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 468px) {
+  .newArrivals .container .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .newArrivals .container .content .box .imgDiv {
+    width: 70px;
+    height: 70px;
+  }
+}/*# sourceMappingURL=newArrivals.css.map */
